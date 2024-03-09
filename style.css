@@ -1,0 +1,200 @@
+/* Các element Chung chung & Mặc định */
+* {
+  /* Layout */
+  margin: 0;
+}
+body {
+  display: flex;
+}
+a {
+  /* Design */
+  text-decoration: none;
+  color: black;
+}
+li {
+  /* Design */
+  /* Layout */
+  display: flex;
+  align-items: center;
+}
+ul {
+    /* Layout */
+    padding: 0;
+}
+/* Các element Thiết lập */
+.mainphoto {
+  /* Image */
+  width: 50vw;
+  height: 100vh;
+}
+#Myname {
+  /* Layout */
+  margin-top: 100px;
+  /* Align */
+  text-align: center;
+  /* Design */
+  font-size: 40px;
+  /* Font */
+  font-family: "Sansita Swashed", system-ui;
+}
+#Introduce {
+  /* Layout */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* Align */
+  text-align: left;
+  line-height: 26px;
+  /* Design */
+  font-weight: 300;
+  font-family: signika;
+  font-size: 20px;
+}
+.Social {
+  /* Align */
+  /* Layout */
+  /* Design */
+}
+.List_Info {
+  /* Align */
+  text-align: center;
+  /* Design */
+  line-height: 26px;
+  /* Layout */
+  margin-top: 26px;
+}
+svg {
+  /* Layout */
+  margin-left: 30px;
+  /* Design */
+  width: 40px;
+  height: 40px;
+}
+.label {
+  /* Align */
+  line-height: 10vh;
+  /* Layout */
+  margin-right: 100px;
+  /* Design */
+  font-size: 23px;
+  /* Font */
+  font-family: sans-serif;
+}
+.wrapper {
+  /* Design */
+  border: solid #00a170 5px;
+  background: linear-gradient(to bottom right, #0066ff 0%, #ffffff 100%);
+}
+/* CSS cho pseudo */
+span:hover {
+  /* Design */
+  color: white;
+}
+/* CSS Social */
+.Facebbook_text {
+    font-size: 22px;
+}
+span{
+    font-size: 22px;
+    font-family: signika;
+}
+.Social li {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.Social img {
+    margin-left: 120px;
+}
+li img {
+    margin-right:40% ;
+}
+p {
+    font-size: 22px;
+    line-height: 50px;
+    font-family: signika;
+}
+.Email_info {
+    margin-top: 40px;
+}
+/* CSS cho phần Responsive */
+
+/* Mobile */
+@media screen and (max-width: 46.1875em) {
+    html {width: 100%;}
+    body {
+        display: inline-block;
+    }
+    .mainphoto {
+        width: 100%;
+        height: 50vh;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    #Myname {
+        font-size: 30px;
+    }
+    #Introduce {
+        font-size: 15px;
+        margin: 50px;
+    }
+    span {
+        display: none;
+    }
+    p {
+        font-size: 15px;
+    }
+    .Social img {
+        width: 40px;
+        height: 40px;
+    }
+    body {
+        orientation: portrait; /* Cố định hướng ngang */
+      }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    body {
+        display: inline-block;
+    }
+    .mainphoto {
+        width: 100%;
+        height: 80vh;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    #Myname {
+        font-size: 30px;
+    }
+    #Introduce {
+        font-size: 15px;
+        margin: 50px;
+    }
+    span {
+        display: none;
+    }
+    body {
+        orientation: portrait; /* Cố định hướng ngang */
+      }
+}
+@media screen and (max-width: 1365px) and (min-width:1024px){
+    body {
+        display: inline;
+        width: 100%;
+    }
+    .mainphoto {
+        width: 100%;
+        height: 50%;
+    }
+    body {
+        orientation: portrait; /* Cố định hướng ngang */
+      }
+    span {display: none;}
+}
